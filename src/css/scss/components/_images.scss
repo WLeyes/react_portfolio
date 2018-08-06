@@ -1,0 +1,25 @@
+/*
+////////////////////////////////////////////////////////////////////////////////
+// scss/components/_images.scss :  Image styling
+////////////////////////////////////////////////////////////////////////////////
+*/
+
+.img {
+  @include m(profile) {
+    margin: em(20px) 0 0 em(20px);
+    padding: em(5px);
+    background-color: rgba(0, 0, 0, 0.6);
+    width: em(72px);
+    border-radius: $border-radius--round;
+  }
+  @include m(background) {
+    height: 100px;
+    width: 90%;
+    @extend .centered;
+  }
+}
+
+#charts--doughnut {
+  max-width: 768px;
+  @extend %centered;
+}

@@ -1,0 +1,129 @@
+/*
+///////////////////////////////////////////////////////////////////////////////////////////////
+// scss/utilities/_placeholders.scss :   placeholders for: links, images, headlines, nav items
+///////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// Helpers
+///////////////////////////////////////////////////////////////////////////////////////////
+// Clearfix
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//For pseudo-elements
+%pseudos {
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+// Center elements
+%centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Screen reader Text
+.srt {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// headlines
+///////////////////////////////////////////////////////////////////////////////////////////
+%headline-primary {
+  font-size: em(30px);
+  font-family: $font-family--primary;
+  font-weight: $font-weight--ultra-bold;
+  line-height: em(30px, 30px);
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// Navigation
+//////////////////////////////////////////////////////////////////////////////
+%navigation-menu--links {
+  display: block;
+  background-color: transparent;
+  border: 1px solid $color--logo-background;
+  font-size: em(12px); // text-transform: uppercase;
+  font-weight: $font-weight--medium;
+  text-align: center;
+  text-decoration: none;
+  padding: em(6px);
+  border-radius: $border-radius--default;
+  z-index: 10;
+}
+
+%navigation-menu--on {
+  color: $malibu;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// Buttons
+//////////////////////////////////////////////////////////////////////////////
+%buttons {
+  color: $white;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  font-weight: $font-weight--medium;
+  transition: opacity $trns-duration;
+  width: em(150px);
+  font-size: em(16px);
+  margin: em(10px);
+  padding: em(10px);
+  text-decoration: none;
+  border-radius: em(3px);
+  -webkit-box-shadow: 11px 10px 25px -4px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 11px 10px 25px -4px rgba(0, 0, 0, 0.63);
+  box-shadow: 11px 10px 25px -4px rgba(0, 0, 0, 0.63);
+  &:hover {
+    opacity: 0.75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// Images
+//////////////////////////////////////////////////////////////////////////////
+%image {
+  display: block;
+  max-width: 100%;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// Panels
+//////////////////////////////////////////////////////////////////////////////
+%panel-default {
+  padding-top: em(30px);
+  padding-bottom: em(20px);
+}
+
+%panel-padding {
+  padding-top: em(80px);
+  padding-bottom: em(34px);
+}

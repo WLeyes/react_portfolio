@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/styles.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div class="logo">
+        <div class="logo--icon fa-10x">
+          <span class="fa-layers fa-fw">
+            <i class="fal fa-desktop-alt"></i>
+            <i class="fas fa-code" data-fa-transform="shrink-10 up-3.5"></i>
+          </span>
+        </div>
+        <p class="logo--line1">Warren</p>
+        <p class="logo--line2">Leyes</p>
+        <p class="logo--line3">Front-end Web Developer</p>
       </div>
     );
   }

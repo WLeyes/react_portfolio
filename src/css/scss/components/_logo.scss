@@ -1,0 +1,44 @@
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @extend %centered;
+  margin-top: 10%;
+  margin-bottom: em(16px);
+  width: 90%;
+  max-width: em(320px);
+  height: em(485px);
+  border-radius: $border-radius--default;
+  background-color: $color--logo-background;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: space-around;
+  -webkit-box-shadow: 11px 10px 25px -4px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 11px 10px 25px -4px rgba(0, 0, 0, 0.63);
+  box-shadow: 11px 10px 25px -4px rgba(0, 0, 0, 0.63);
+  @include m(line1) {
+    font-size: em(50px);
+    font-family: $font-family--primary;
+    font-weight: $font-weight--ultra-bold;
+    margin: 0;
+  }
+  @include m(line2) {
+    font-size: em(55px);
+    font-family: $font-family--primary;
+    font-weight: $font-weight--ultra-bold;
+    letter-spacing: em(2px);
+    margin: 0;
+  }
+  @include m(line3) {
+    font-size: em(16px);
+    font-family: $font-family--primary;
+    font-weight: $font-weight--bold;
+    margin: 0;
+  }
+  @include media-query(medium) {
+    height: auto;
+    padding: em(20px);
+    margin-top: em(120px);
+  }
+}
